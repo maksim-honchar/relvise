@@ -40,3 +40,7 @@ body {
     color: #000;
 }
 
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
