@@ -36,8 +36,10 @@ html,
 body {
     height: 100%;
     line-height: 1;
-    font-size: 16px;
-    color: #000;
+    font-size: 14px;
+    color: #252b42;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 .wrapper {
@@ -48,4 +50,48 @@ body {
 ._container {
     max-width: 1046px;
     margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+/* header */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.header__menu {
+    margin: 0 0 0 133px;
+}
+
+.menu {}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__item:not(:last-child) {
+    margin: 0 21px 0 0;
+}
+
+.menu__link {
+    color: #737373;
+    line-height: calc(24/14*100%); /* 24px/14px*100 */
+    font-weight: 600;
 }
