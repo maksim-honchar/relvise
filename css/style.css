@@ -92,6 +92,6 @@ body {
 
 .menu__link {
     color: #737373;
-    line-height: calc(24/14*100%); /* 24px/14px*100 */
+    line-height: calc(24 / 14 * 100%); /* 24px/14px*100 */
     font-weight: 600;
 }
