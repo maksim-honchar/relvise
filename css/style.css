@@ -45,6 +45,8 @@ body {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 ._container {
@@ -69,6 +71,12 @@ body {
     align-items: center;
 }
 
+@media (max-width: 479px) {
+    .header__container {
+        min-height: 70px;
+    }
+}
+
 .header__logo {
     font-size: 24px;
     font-weight: 700;
@@ -79,7 +87,30 @@ body {
     margin: 0 0 0 133px;
 }
 
-.menu {}
+/* планшет tablet */
+@media (max-width: 992px) {
+    .header__menu {
+        margin: 0 0 0 80px;
+    }
+}
+
+/* планшет tablet / телефон phone */
+@media (max-width: 767px) {
+    .header__menu {
+        margin: 0 0 0 40px;
+    }
+}
+
+/* телефон phone */
+@media (max-width: 479px) {
+    .header__menu {
+        margin: 0 0 0 20px;
+    }
+}
+
+.menu {
+    padding: 5px 0;
+}
 
 .menu__list {
     display: flex;
@@ -92,6 +123,20 @@ body {
 
 .menu__link {
     color: #737373;
-    line-height: calc(24 / 14 * 100%); /* 24px/14px*100 */
+    line-height: calc(24 / 14 * 100%);
+    /* line-hight / font-size x 100% */
     font-weight: 600;
 }
+
+@media (max-width: 479px) {
+    .menu__link {
+        font-size: 18px;
+    }
+}
+
+/* page */
+.page {
+    flex: 1 1 auto;
+}
+
+/* footer */
