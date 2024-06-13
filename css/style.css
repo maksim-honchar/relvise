@@ -166,6 +166,9 @@ body {
 ._container {
 }
 .main-block__body {
+    padding: 184px 0 191px 0;
+    position: relative;
+    z-index: 2;
 }
 .main-block__title {
 }
