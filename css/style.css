@@ -154,7 +154,11 @@ body {
 
 .page__main-block {}
 
-.page__services {}
+.page__services {
+    position: relative;
+    z-index: 2;
+    margin: -111px 0 0 0;
+}
 
 /* footer */
 .footer {}
