@@ -153,32 +153,106 @@ body {
     flex: 1 1 auto;
 }
 
-.page__main-block {
-}
+.page__main-block {}
 
 
 /* MAIN-BLOCK-------------------------------------------------- */
 .main-block {
     position: relative;
 }
-.main-block__container {
-}
-._container {
-}
+
+.main-block__container {}
+
+._container {}
+
 .main-block__body {
     padding: 184px 0 191px 0;
     position: relative;
     z-index: 2;
+    max-width: 400px;
 }
+
+@media (max-width: 992px) {
+    .main-block__body {
+        padding: 120px 0 191px 0;
+    }
+}
+
+.main-block__body>*:not(:last-child) {
+    margin: 0 0 35px 0;
+}
+
 .main-block__title {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: calc(80 / 58 * 100%);
+    letter-spacing: .20000000298023224px;
 }
+
+@media (max-width: 479px) {
+    .main-block__title {
+        font-size: 42px;
+    }
+}
+
 .main-block__text {
+    color: #737373;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: calc(30 / 20 * 100%);
+    letter-spacing: .20000000298023224px;
 }
+
+@media (max-width: 479px) {
+    .main-block__text {
+        color: #252b42;
+    }
+}
+
 .main-block__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0;
 }
+
 .main-block__button {
+    border-radius: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 36px;
+    min-height: 48px;
+    letter-spacing: .20000000298023224px;
+    font-weight: 700;
+    line-height: calc(28 / 14 * 100%);
+    text-align: center;
+    margin: 10px 0;
 }
+
+@media (max-width: 479px) {
+    .main-block__button {
+       flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 479px) {
+    .main-block__button:not(:last-child) {
+       margin-right: 10px;
+    }
+}
+
+.main-block__button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.main-block__button_orange {
+    background-color: #ff7b47;
+    color: #fff;
+}
+
 .main-block__button_border {
+    border: 1px solid #0d5c63;
+    color: #0d5c63;
 }
 
 .main-block__image {
@@ -189,5 +263,17 @@ body {
     left: 0;
 }
 
+@media (max-width: 1300px) {
+    .main-block__image img {
+        object-position: right;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-block__image {
+        opacity: .5;
+    }
+}
+
 /* FOOTER-------------------------------------------------- */
-.footer{}
+.footer {}
