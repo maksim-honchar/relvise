@@ -5,67 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <title>Relvise</title>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Генеруємо випадковий код
-            var randomCode = Math.random().toString(36).substring(7);
-    
-            // Створюємо новий елемент <link> для CSS
-            var link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = "/css/style.css?nocache=" + randomCode;
-    
-            // Додаємо <link> у <head>
-            document.head.appendChild(link);
-        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const randomCode = Math.random().toString(36).substring(7)
+            const link = document.createElement("link")
+            link.rel = "stylesheet"
+            link.href = "/css/style.css?nocache=" + randomCode
+            document.head.appendChild(link)
+        })
     </script>
 </head>
 
 <body>
-    <div class="_wrapper">
-        <header class="header">
-            <div class="header__container _container">
-                <a href="" class="header__logo">Relvise</a>
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">Home</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Product</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Pricing</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="main">
-            <div class="main-block _ibg">
-                <img src="/pics/main__block/background.jpg" alt="main-block background">
-                <div class="main-block__container _container">
-                    <div class="main-block__content">
-                        <h1 class="main-block__title">Finance and Consultancy Solution</h1>
-                        <h4 class="main-block__subtitle">We know how large objects will act, but things on a small
-                            scale.</h4>
-                        <div class="main-block__buttons">
-                            <a href="" class="main-block__btn main-block__btn_orange">Get Quote Now</a>
-                            <a href="" class="main-block__btn main-block__btn_trans">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
+
 </body>
 
 </html>
