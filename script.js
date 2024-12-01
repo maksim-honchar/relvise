@@ -40,3 +40,8 @@ getIntouchCards.forEach(card => {
     });
 });
 
+// Pause marquee
+document.querySelector('.clients').addEventListener('click', () => {
+    const clientsBody = document.querySelector('.clients__body');
+    clientsBody.classList.toggle('paused');
+});
